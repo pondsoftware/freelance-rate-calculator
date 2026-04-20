@@ -74,6 +74,84 @@ export default function Home() {
           </div>
         </section>
       </div>
+
+      <section className="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">How much should a freelancer charge per hour?</h3>
+            <p className="text-gray-600">Your rate depends on your target income, expenses, taxes, and billable hours. Most freelancers need to charge 40-60% more than an equivalent hourly wage to cover self-employment tax, benefits, and non-billable time.</p>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">What is a good freelance rate for a developer?</h3>
+            <p className="text-gray-600">Freelance web developers typically charge $75-$200/hour depending on experience and specialization. Junior developers may start at $50-$75, while specialized developers (AI/ML, blockchain) can charge $200+.</p>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Should I charge hourly or project-based?</h3>
+            <p className="text-gray-600">Hourly works well for ongoing or undefined work. Project-based pricing works better for well-scoped deliverables and lets you earn more as you get faster. Many freelancers use a mix of both.</p>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">How do I raise my freelance rates?</h3>
+            <p className="text-gray-600">Raise rates for new clients first. For existing clients, give 30-60 days notice and frame it as a market adjustment. Aim to raise rates 10-20% annually. The best time is when you&apos;re fully booked.</p>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">What expenses should freelancers track?</h3>
+            <p className="text-gray-600">Track home office costs, equipment, software subscriptions, internet, phone, mileage, professional development, health insurance, and retirement contributions. These reduce your taxable income.</p>
+          </div>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How much should a freelancer charge per hour?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Your rate depends on your target income, expenses, taxes, and billable hours. Most freelancers need to charge 40-60% more than an equivalent hourly wage to cover self-employment tax, benefits, and non-billable time."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is a good freelance rate for a developer?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Freelance web developers typically charge $75-$200/hour depending on experience and specialization. Junior developers may start at $50-$75, while specialized developers (AI/ML, blockchain) can charge $200+."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Should I charge hourly or project-based?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hourly works well for ongoing or undefined work. Project-based pricing works better for well-scoped deliverables and lets you earn more as you get faster. Many freelancers use a mix of both."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I raise my freelance rates?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Raise rates for new clients first. For existing clients, give 30-60 days notice and frame it as a market adjustment. Aim to raise rates 10-20% annually. The best time is when you're fully booked."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What expenses should freelancers track?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Track home office costs, equipment, software subscriptions, internet, phone, mileage, professional development, health insurance, and retirement contributions. These reduce your taxable income."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }
