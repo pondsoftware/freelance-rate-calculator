@@ -12,6 +12,20 @@ export const metadata: Metadata = {
   title: "Freelance Rate Calculator — What Should You Charge Per Hour?",
   description:
     "Calculate your true freelance hourly rate accounting for self-employment tax, health insurance, retirement, non-billable hours, PTO, and business expenses.",
+  openGraph: {
+    title: "Freelance Rate Calculator",
+    description:
+      "Calculate your true freelance hourly rate accounting for self-employment tax, health insurance, retirement, non-billable hours, PTO, and business expenses.",
+    type: "website",
+    url: "https://freelancerates.net",
+    siteName: "Freelance Rate Calculator",
+  },
+  twitter: {
+    card: "summary",
+    title: "Freelance Rate Calculator",
+    description:
+      "Calculate your true freelance hourly rate accounting for self-employment tax, health insurance, retirement, non-billable hours, PTO, and business expenses.",
+  },
 };
 
 export default function RootLayout({
