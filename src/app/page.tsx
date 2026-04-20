@@ -1,4 +1,5 @@
 import RateCalculator from "@/components/RateCalculator";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -74,6 +75,36 @@ export default function Home() {
           </div>
         </section>
       </div>
+
+      {/* Explore Rates Section */}
+      <section className="mt-12">
+        <h2 className="text-2xl font-semibold text-gray-900 mb-4">Explore Rates by Profession</h2>
+        <p className="text-gray-600 mb-6">
+          Dive deeper into rates for specific freelance professions, or use our specialized calculators:
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <Link href="/hourly-to-salary" className="block p-5 bg-white rounded-xl border border-gray-200 hover:border-violet-300 hover:shadow-sm transition">
+            <h3 className="font-semibold text-violet-600 mb-1">Hourly to Salary Converter</h3>
+            <p className="text-sm text-gray-500">Convert freelance rates to salary equivalents accounting for taxes, benefits, and PTO.</p>
+          </Link>
+          <Link href="/web-developer" className="block p-5 bg-white rounded-xl border border-gray-200 hover:border-violet-300 hover:shadow-sm transition">
+            <h3 className="font-semibold text-violet-600 mb-1">Web Developer Rates</h3>
+            <p className="text-sm text-gray-500">Rates by experience level, tech stack, and project type. From junior to senior.</p>
+          </Link>
+          <Link href="/graphic-designer" className="block p-5 bg-white rounded-xl border border-gray-200 hover:border-violet-300 hover:shadow-sm transition">
+            <h3 className="font-semibold text-violet-600 mb-1">Graphic Designer Rates</h3>
+            <p className="text-sm text-gray-500">Pricing for brand, UI/UX, illustration, and print design. Per-project benchmarks.</p>
+          </Link>
+          <Link href="/copywriter" className="block p-5 bg-white rounded-xl border border-gray-200 hover:border-violet-300 hover:shadow-sm transition">
+            <h3 className="font-semibold text-violet-600 mb-1">Copywriter Rates</h3>
+            <p className="text-sm text-gray-500">Per-word, per-project, and hourly rates for blog posts, landing pages, and sales copy.</p>
+          </Link>
+          <Link href="/project-pricing" className="block p-5 bg-white rounded-xl border border-gray-200 hover:border-violet-300 hover:shadow-sm transition">
+            <h3 className="font-semibold text-violet-600 mb-1">Project Pricing Calculator</h3>
+            <p className="text-sm text-gray-500">Convert hourly rates to project quotes with buffers, margins, and milestone payments.</p>
+          </Link>
+        </div>
+      </section>
 
       <section className="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>

@@ -2,7 +2,14 @@ import { writeFileSync } from "fs";
 
 const DOMAIN = "https://freelancerates.net";
 
-const urls = ["/"];
+const urls = [
+  "/",
+  "/hourly-to-salary",
+  "/web-developer",
+  "/graphic-designer",
+  "/copywriter",
+  "/project-pricing",
+];
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
