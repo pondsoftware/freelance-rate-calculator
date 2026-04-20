@@ -9,6 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/favicon.svg",
+  },
   title: "Freelance Rate Calculator — What Should You Charge Per Hour?",
   description:
     "Calculate your true freelance hourly rate accounting for self-employment tax, health insurance, retirement, non-billable hours, PTO, and business expenses.",
