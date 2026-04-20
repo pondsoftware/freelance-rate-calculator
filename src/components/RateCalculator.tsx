@@ -100,7 +100,7 @@ export default function RateCalculator() {
             id="profession"
             value={selectedProfession?.slug || ""}
             onChange={(e) => handleProfessionChange(e.target.value)}
-            className="w-full rounded-lg border border-gray-300 py-3 px-4 text-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition"
+            className="w-full rounded-lg border border-gray-300 py-3 px-4 text-lg focus:border-violet-500 focus:ring-2 focus:ring-violet-200 outline-none transition"
           >
             <option value="">-- Choose a profession --</option>
             {PROFESSIONS.map((p) => (
@@ -233,40 +233,40 @@ export default function RateCalculator() {
 
       {/* Market Rate Comparison */}
       {selectedProfession && (
-        <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
-          <h3 className="font-semibold text-blue-900 mb-3">
+        <div className="bg-violet-50 border border-violet-200 rounded-xl p-6">
+          <h3 className="font-semibold text-violet-900 mb-3">
             Market Rate Comparison: {selectedProfession.name}
           </h3>
-          <div className="flex items-center justify-between text-sm text-blue-800 mb-2">
+          <div className="flex items-center justify-between text-sm text-violet-800 mb-2">
             <span>Your rate: <strong>${fmt(Math.ceil(hourlyRate))}/hr</strong></span>
             <span>Market range: ${selectedProfession.typicalRate.low}&ndash;${selectedProfession.typicalRate.high}/hr</span>
           </div>
           {/* Visual bar */}
-          <div className="relative h-4 bg-blue-200 rounded-full overflow-hidden">
+          <div className="relative h-4 bg-violet-200 rounded-full overflow-hidden">
             {/* Low-mid-high zones */}
             <div className="absolute inset-0 flex">
-              <div className="flex-1 bg-blue-200" />
-              <div className="flex-1 bg-blue-300" />
-              <div className="flex-1 bg-blue-400" />
+              <div className="flex-1 bg-violet-200" />
+              <div className="flex-1 bg-violet-300" />
+              <div className="flex-1 bg-violet-400" />
             </div>
             {/* Marker for user's rate */}
             <div
-              className="absolute top-0 h-full w-1 bg-blue-900 rounded"
+              className="absolute top-0 h-full w-1 bg-violet-900 rounded"
               style={{ left: `${getMarketPosition()}%` }}
             />
           </div>
-          <div className="flex justify-between text-xs text-blue-600 mt-1">
+          <div className="flex justify-between text-xs text-violet-600 mt-1">
             <span>${selectedProfession.typicalRate.low}</span>
             <span>${selectedProfession.typicalRate.mid} (mid)</span>
             <span>${selectedProfession.typicalRate.high}</span>
           </div>
           {hourlyRate < selectedProfession.typicalRate.low && (
-            <p className="text-sm text-blue-800 mt-3">
+            <p className="text-sm text-violet-800 mt-3">
               Your calculated rate is <strong>below</strong> the typical market range. Consider whether your expenses or income target are set too low.
             </p>
           )}
           {hourlyRate > selectedProfession.typicalRate.high && (
-            <p className="text-sm text-blue-800 mt-3">
+            <p className="text-sm text-violet-800 mt-3">
               Your calculated rate is <strong>above</strong> the typical market range. This may be justified by experience or specialization, but ensure it aligns with your market.
             </p>
           )}
@@ -381,7 +381,7 @@ export default function RateCalculator() {
               id="complexity"
               value={complexityMultiplier}
               onChange={(e) => setComplexityMultiplier(Number(e.target.value))}
-              className="w-full rounded-lg border border-gray-300 py-3 px-4 text-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition"
+              className="w-full rounded-lg border border-gray-300 py-3 px-4 text-lg focus:border-violet-500 focus:ring-2 focus:ring-violet-200 outline-none transition"
             >
               <option value={1.0}>Simple (1.0x)</option>
               <option value={1.25}>Standard (1.25x)</option>
@@ -396,7 +396,7 @@ export default function RateCalculator() {
                 type="checkbox"
                 checked={rushFee}
                 onChange={(e) => setRushFee(e.target.checked)}
-                className="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                className="w-5 h-5 rounded border-gray-300 text-violet-600 focus:ring-violet-500"
               />
               <label htmlFor="rushToggle" className="text-sm font-medium text-gray-700">
                 Rush fee
@@ -506,7 +506,7 @@ function InputField({
           type="number"
           value={value}
           onChange={(e) => onChange(Number(e.target.value))}
-          className={`w-full rounded-lg border border-gray-300 py-3 text-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition ${prefix ? "pl-8 pr-16" : "pl-4 pr-16"}`}
+          className={`w-full rounded-lg border border-gray-300 py-3 text-lg focus:border-violet-500 focus:ring-2 focus:ring-violet-200 outline-none transition ${prefix ? "pl-8 pr-16" : "pl-4 pr-16"}`}
           min={min}
           max={max}
           step={step}
