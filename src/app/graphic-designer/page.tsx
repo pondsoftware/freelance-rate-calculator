@@ -19,8 +19,21 @@ export const metadata: Metadata = {
   },
 };
 
+const webAppJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Graphic Designer Rate Calculator",
+  description: "Calculate freelance graphic designer rates by specialization (brand, UI/UX, illustration, print) and experience level. Includes project pricing for logos, websites, and marketing materials.",
+  url: "https://freelancerates.net/graphic-designer",
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "Any",
+  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+};
+
 export default function GraphicDesignerPage() {
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppJsonLd) }} />
     <div className="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
       <div className="mb-10">
         <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -245,5 +258,6 @@ export default function GraphicDesignerPage() {
         }}
       />
     </div>
+    </>
   );
 }
