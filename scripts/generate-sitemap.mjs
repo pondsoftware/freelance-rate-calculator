@@ -13,6 +13,7 @@ const urls = [
   "/social-media-manager",
   "/video-editor",
   "/seo-consultant",
+  "/freelance-writing-rates-per-word",
 ];
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
