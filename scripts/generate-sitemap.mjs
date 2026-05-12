@@ -9,6 +9,10 @@ const urls = [
   "/graphic-designer",
   "/copywriter",
   "/project-pricing",
+  "/virtual-assistant",
+  "/social-media-manager",
+  "/video-editor",
+  "/seo-consultant",
 ];
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
