@@ -116,6 +116,22 @@ export default function Home() {
             <h3 className="font-semibold text-violet-600 mb-1">Project Pricing Calculator</h3>
             <p className="text-sm text-gray-500">Convert hourly rates to project quotes with buffers, margins, and milestone payments.</p>
           </Link>
+          <Link href="/virtual-assistant" className="block p-5 bg-white rounded-xl border border-gray-200 hover:border-violet-300 hover:shadow-sm transition">
+            <h3 className="font-semibold text-violet-600 mb-1">Virtual Assistant Rates</h3>
+            <p className="text-sm text-gray-500">Hourly, retainer, and package pricing for general admin, executive, and specialized VAs.</p>
+          </Link>
+          <Link href="/social-media-manager" className="block p-5 bg-white rounded-xl border border-gray-200 hover:border-violet-300 hover:shadow-sm transition">
+            <h3 className="font-semibold text-violet-600 mb-1">Social Media Manager Rates</h3>
+            <p className="text-sm text-gray-500">Monthly retainer and hourly pricing for content, strategy, and paid ads.</p>
+          </Link>
+          <Link href="/video-editor" className="block p-5 bg-white rounded-xl border border-gray-200 hover:border-violet-300 hover:shadow-sm transition">
+            <h3 className="font-semibold text-violet-600 mb-1">Video Editor Rates</h3>
+            <p className="text-sm text-gray-500">Per-finished-minute, per-project, and hourly rates for YouTube, shorts, podcasts, and ads.</p>
+          </Link>
+          <Link href="/seo-consultant" className="block p-5 bg-white rounded-xl border border-gray-200 hover:border-violet-300 hover:shadow-sm transition">
+            <h3 className="font-semibold text-violet-600 mb-1">SEO Consultant Rates</h3>
+            <p className="text-sm text-gray-500">Audit, project, and retainer pricing for technical, content, links, and local SEO.</p>
+          </Link>
         </div>
       </section>
 
