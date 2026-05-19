@@ -135,6 +135,28 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Guides & Articles */}
+      <section className="mt-12">
+        <h2 className="text-2xl font-semibold text-gray-900 mb-4">Guides & Pricing Articles</h2>
+        <p className="text-gray-600 mb-6">
+          Deeper reads on how rates work, what separates tiers, and how to move yours up.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <Link href="/freelance-rates-by-experience-level" className="block p-5 bg-white rounded-xl border border-gray-200 hover:border-violet-300 hover:shadow-sm transition">
+            <h3 className="font-semibold text-violet-600 mb-1">Rates by Experience Level</h3>
+            <p className="text-sm text-gray-500">Junior, mid-career, and senior rate ranges across every major role — and what separates the tiers.</p>
+          </Link>
+          <Link href="/how-to-raise-freelance-rates" className="block p-5 bg-white rounded-xl border border-gray-200 hover:border-violet-300 hover:shadow-sm transition">
+            <h3 className="font-semibold text-violet-600 mb-1">How to Raise Your Rates</h3>
+            <p className="text-sm text-gray-500">When to raise, how much, what to say. Scripts for new and existing clients plus a 90-day plan.</p>
+          </Link>
+          <Link href="/freelance-writing-rates-per-word" className="block p-5 bg-white rounded-xl border border-gray-200 hover:border-violet-300 hover:shadow-sm transition">
+            <h3 className="font-semibold text-violet-600 mb-1">Writing Rates Per Word</h3>
+            <p className="text-sm text-gray-500">Per-word pricing tables by niche, experience, and content length — with sample quotes.</p>
+          </Link>
+        </div>
+      </section>
+
       <section className="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
         <div className="space-y-6">

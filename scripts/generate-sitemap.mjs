@@ -14,6 +14,8 @@ const urls = [
   "/video-editor",
   "/seo-consultant",
   "/freelance-writing-rates-per-word",
+  "/how-to-raise-freelance-rates",
+  "/freelance-rates-by-experience-level",
 ];
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
